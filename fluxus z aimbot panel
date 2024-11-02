@@ -1,0 +1,194 @@
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+
+
+ 
+
+
+local Library = loadstring(game:HttpGetAsync(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('cIhRIxWdxFXJjNBavsEVrNbyYnMTjBgCqEhtkKQojrUqhehEXUZcpqYaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0ZzcGxvaXQvU2hpdHR5d2FyZS9yZWZzL2hlYWRzL21haW4vU291cmNl')))()
+Library.Theme:Matcha()
+
+local Window = Library:CreateWindow({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('ZErTyLtuXcDVueTKptrfuRyLBlRSCOGdzZatvZvPlgiGfxZtlUkjnAHQWltYm90IFBhbmVsIC0gRmx1eHVzIHo='),
+    Logo = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('RqbJdcvJFwadOKnxLcJosTkUoVdcgkyXhdVGsDBzoauTLFycKVFhUTBcmJ4YXNzZXRpZDovLzExMTIyNjEyNTg0MDMyMA=='),
+})
+
+-- Credits Tab
+local CreditsTab = Window:AddTab({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('hnGvmCrfsuvOPSLMSEWvLBAajwAloCmjnjczzyVaDWzaJvcuwepTnQdQ3JlZGl0cw=='),
+    Icon = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('cbSgoKzuMCFuZHtvyvhPtiBLdUDElujQRjPZuDGeFbTnGtJihrCCZoZaG9tZQ=='),
+})
+CreditsTab:AddParagraph({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('xtCpgPhomJalbsGNOZdjxGyDoxHawwFQMWhxCaYOxVXbYPLZpuQJdfIRm91bmRlcnM='),
+    Description = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('gUCGZNhkpBUmYimrIWPJZSyfkVUXEJWtwLxPpeaSOulFRQkuYGCTvNySmFrZSBCcm9jayAmIENlbGVzdGU=')
+})
+CreditsTab:AddParagraph({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('cBepWNsULKkaKaLSDOrHeexpYWEvkWwNMeqXqJvTmuoAcpqqbZrdjWzU2NyaXB0ZXJz'),
+    Description = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('LDAGgifbLauTgVNRcUwVkWTGcJtQHMZgSuSOfRAtxwQtMQzsalOEpnlVml4ZWxGdW5rICYgRnNwbG9pdA==')
+})
+
+-- ESP Tab
+local ESPTab = Window:AddTab({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('OAmTrEHsoKwJqWmVMOkIsVLCSCEqHnDEtVbYnwiKVWzQmeDFuPGGHEJRVNQ'),
+    Icon = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('GTgpVPHqqZcXVskfeePRiylwgNttJnvEQZJXtQXZAJIYJguCWCnaxSTaG9tZQ=='),
+})
+ESPTab:AddButton({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('lHhktSkqhKXdLEGyYGISSHOMtntKBoesbkZeTrGFXtDiybhKSheoboWQWN0aXZhdGUgRVNQ'),
+    Callback = function()
+        loadstring(game:HttpGet(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('gSlQwbLBcgrhXirssKaTKChlqxOtgaswqIWEKPuzqRfomvmkLZbeJlKaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0RKRnVua1RoZUJlc3QvZmx1eHVzLXotZXNwLXNjcmlwdC9yZWZzL2hlYWRzL21haW4vRVNQJTIwc2NyaXB0'), true))()
+    end,
+})
+
+-- High Speed Tab
+local HighSpeedTab = Window:AddTab({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('NuqTuZJjDgHrcSUDzUgkiNqURNSncQBiOGIcLSXrvLWDLhkNFdwfKYKSGlnaCBTcGVlZA=='),
+    Icon = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('oICeDQRYqsjmGhIKPjyHVihOjGVSYLoIvdQVEAOfjgXQpXcZNACMaswaG9tZQ=='),
+})
+HighSpeedTab:AddButton({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('evhWlBUqlFUsmhoPRRtPvBWqKvdBXFtltMIHLbpRbcHQBbntnSQVJSPU2V0IFNwZWVkIHRvIDI1MA=='),
+    Callback = function()
+        local player = game.Players.LocalPlayer
+        if player and player.Character and player.Character:FindFirstChild(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('ESczinREvrITNEBtCORGfUjDrjRCNTigCKKEhkVmEctonFsQbmUJMeHSHVtYW5vaWQ=')) then
+            player.Character.Humanoid.WalkSpeed = 250
+            print(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('HSqObvyWYcGJlwIjqkDqPeRZsPItAonJYYNssUKsykOGbjSJfjjEeuDU3BlZWQgc2V0IHRvIDI1MCE='))
+        else
+            print(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('eqqxDNoVfXqGrnnAajnqoQtblBPeDVtAJmJKmfcoJtxVtWByQkPBERgQ291bGQgbm90IHNldCBzcGVlZDsgSHVtYW5vaWQgbm90IGZvdW5kLg=='))
+        end
+    end,
+})
+
+-- Super Jump Tab
+local SuperJumpTab = Window:AddTab({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('sNWyaGCfCvbemUQqVkQsvGqrrBQyYGNgVZeKthCvaQgHFILqBdggNBUU3VwZXIgSnVtcA=='),
+    Icon = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('cfUvWeFChyPRfCOfcqOmVZdveGWTFcdoKZYpHkbOFxFzkaMdHBGjSPoaG9tZQ=='),
+})
+SuperJumpTab:AddButton({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('qWMLBurQxWRmgRPwHuGatknaumjqCjBgdiaZPXsOGsgdgWBSnnuTWAQU2V0IEp1bXAgUG93ZXIgdG8gMjUw'),
+    Callback = function()
+        local player = game.Players.LocalPlayer
+        if player and player.Character and player.Character:FindFirstChild(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('OFdlLIeDOGJHGYIawYgfrFgRurDxUKbdFTpEzpvmlEjbLLEimGKyVyESHVtYW5vaWQ=')) then
+            player.Character.Humanoid.JumpPower = 250
+            print(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('XONmljCFYcWABulCOXJEiQAEqkImyZuhliGvReLkZcECyWSwISYOWIwSnVtcCBQb3dlciBzZXQgdG8gMjUwIQ=='))
+        else
+            print(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('aDhqnXbeNwSbWuTlviaWJtcgKjPHSqJOARtitpLNIJgVXqYSYtIFQYDQ291bGQgbm90IHNldCBqdW1wIHBvd2VyOyBIdW1hbm9pZCBub3QgZm91bmQu'))
+        end
+    end,
+})
+
+-- Camlock Tab
+local CamlockTab = Window:AddTab({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('XXiOeoUlSKDhuXRDYShfkmkmvKsXCLWnvILQPwzUwsqlRXomHUJnmggQ2FtbG9jaw=='),
+    Icon = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('lWhqolfdjszkQthKSDmPwOqtuEDiuDxrCyQnfiPKnOeijoAznOVcljEc2V0dGluZ3M='),
+})
+CamlockTab:AddButton({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('NENgHrZYdNKSHoOwdiqAjKxhDQkiSIMnDHxGkMGQPyZNjmqTPwKzwjkQWN0aXZhdGUgQ2FtbG9jaw=='),
+    Callback = function()
+        loadstring(game:HttpGet(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('qFRnoZJNwKyOPtZQWgXwqgQLeOGdfOagzXrUfKaGzrWEMjEtzUQeqkxaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0dvb2Z5QmxveC9GbHV4dXNaL3JlZnMvaGVhZHMvbWFpbi9CZXN0Q2FtbG9jaw==')))()
+        print(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('LOMOpXZrlLicOxuvNlkQFQCPZoMwzHGjNKfXmFCRCsWkwxWxTNjVPQsQ2FtbG9jayBzY3JpcHQgZXhlY3V0ZWQu'))
+    end,
+})
+
+-- Silent Aim Tab
+local SilentAimTab = Window:AddTab({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('AjznaTzYGqHhnzpEGlEfhMbEGWgSwMRcTKvJoBcICLGXrxPfReIZDbmU2lsZW50IEFpbQ=='),
+    Icon = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('jWjFdKhEXnAhhxlymrioMnSyaiOxGHdfivqrgIXYNeKANHAtrMlEJInaG9tZQ=='),
+})
+SilentAimTab:AddButton({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('IECKwAmhzCVmKmjdXLKePXMdsGIclOpugjsRDsTTzqeoWSFawYqBUwlQWN0aXZhdGUgU2lsZW50IEFpbQ=='),
+    Callback = function()
+        loadstring(game:HttpGet(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('YiIoPiIqvphQuUtZuOwMdgzOrKmcuPQkwXhHlhPbNeJbTPloIxIwMWvaHR0cHM6Ly9wYXN0ZS5nZy9wL2Fub255bW91cy9iNzY4M2E4NzIzM2Q0ZjRiYTg0ZGE1ZDRiN2VhY2E1Ni9maWxlcy9kMWQ3MjUwMTA5YTE0YzZkYmNiZmFlYzZkMDExMDkyZC9yYXc=')))()
+        print(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('ewpefbztGVGwSBKGknDniWyYYznzPLALrgCemssGsBVSfycYTaSWPBDU2lsZW50IEFpbSBzY3JpcHQgZXhlY3V0ZWQu'))
+    end,
+})
+
+-- Additional Tabs
+local NoclipTab = Window:AddTab({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('ONFFBoJWApUOkSyTJIRkuqMRNnzmKMmBoKHJoueLyTgtcehrIjwsZyTTm9jbGlw'),
+    Icon = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('dHAMeaWnDESeYvyDIpUdaMzgxjkvWaiIllGnLxKwfOWCNEhjBJoBPpNaG9tZQ=='),
+})
+
+-- Example UI Elements
+local Section1 = CreditsTab:AddSection({
+    Title = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('fiXepCzzessjBDsUbuvPEDjjgUpeSygcgSFzTVZzmZHUsYXQhPGyPFsU2VjdGlvbjE=')
+})
+Section1:AddSeparator({
+    text = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('MssNeJOgMUJnmIGmPnXLbxfPIVuTbnQwlaBwiYjpgBxEcPhnMwUHWocU2VwYXJhdG9y')
+})
+
+Section1:AddSlider({
+    text = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('TtpvtaVtFzkFsdMFWprLRTegeGkxGErbiqMCkUjQRdNKdmcPIZxVwdjU2xpZGVy'), 
+    flag = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('AvilCPRHXwSXyCZlKhHiEntPSJGFrKmRDAOKANfMXKiOzGSrmGXWatuU2xpZGVyXzE='), 
+    suffix = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('HtLbqJZVHafKrCrMoLKmknDdfejmYRXaPzuCWMJVWtmEUnLTvmPvQRH'), 
+    value = 0.000,
+    min = 0.1, 
+    max = 0.999,
+    increment = 0.001,
+    tooltip = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('tldYzAWkQMBZmJCITlrXmkpFrTVVyAnrWdWGzflMXgnadNOwVkPvXAyVG9vbHRpcDE='),
+    risky = false,
+    callback = function(v) 
+        print(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('rJhsRbYoRcgydQGpoatKDKLQlWQRsNvRUjUBFumcmoojvvROcbqOEGlU2xpZGVyIFZhbHVlIElzIE5vdyA6IA==').. v)
+    end
+})
+
+Section1:AddBind({
+    text = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('vVLLWkpWZeTSrPSQLMunoaisFavchliZSHkXfxwuxHOemPHimLbpjXmS2V5YmluZA=='),
+    flag = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('XZMEdeCZbSdZTTQIYIOlVpkeEHHWkInxFxnVVjTezuZQdUrtXAsTlyVS2V5XzE='),
+    nomouse = true,
+    noindicator = true,
+    tooltip = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('zXZolFMwxNniXtxxIXbqSdXEIsZRKKnsucDNJzhpcIRfnfwpBYJexLcVG9vbHRpcDE='),
+    mode = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('iIqsAJfrFTepZOPOQHsizMvKloJKiMyRPiLMsXybKFcEwdEOQCFISZtdG9nZ2xl'),
+    bind = Enum.KeyCode.Q,
+    risky = false,
+    keycallback = function(v)
+        print(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('nJwMHBBAstPaIgEdERygAzWdMKNxJwtsLPcvSweVzhbpaQEgZXZKztaS2V5YmluZCBDaGFuZ2VkIQ=='))
+    end
+})
+
+Section1:AddList({
+    enabled = true,
+    text = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('IDLdozYrRnoLianAOMNkNPlkYEbNPPnQztNVTrPbYqGaoQdLQExaTEnTGlzdA=='),
+    flag = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('qArnrTmdPAHMMULDOIJtoDTvsuqnEWgBnvlICIxpMDpafsKxoCakxjDTGlzdF8x'),
+    multi = false,
+    tooltip = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('YtvoUFdCqscKzeTmZTRDGvMkPXNCiurejZjNKBRYtkwSDEvyGkVTcgFVG9vbHRpcDE='),
+    risky = false,
+    value = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('TmYmAIGGHxDtmiNIBrRPPViLTZBFFVGOuXoCJuIAutXMwGjMsiEKLJCMQ=='),
+    values = { kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('ZOjJoVnhwVzrdnBMNxlxgaapNNChYklSPPHqDqbzefPpBThQNYRkgXVMQ=='), kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('NdfkyKBIRWruVeGbScfxjLlLkBNDGUFYaeXUnlwYRffQNkCxgYCDbGzMg=='), kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('xCReovKsKmessSRuvNggkYuBsSBqRkyIJBbiJywvnMwDsoAMhkXHraYMw==') },
+    callback = function(v)
+        print(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('PvOrcpaYochwEkPAuntQLkkUzEKQlwUuuECtgtxJQwShNjskAmfYQUOTGlzdCBWYWx1ZSBJcyBOb3cgOiA=')..v)
+    end
+})
+
+Section1:AddBox({
+    enabled = true,
+    text = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('SdyVhiVGzlzDVyhdzShOpMqaWhzexMAINPfknxMORrwFMYOEvducBOiVGV4dEJveDE='),
+    input = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('HPTlLWmMwnIOLEVbfYssxNiSELBSjXfRDsFPbVCRSHMaFZWxGicTpGkUGxhY2VIb2xkZXIx'),
+    flag = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('FfpQbfYHMznoaXOnPPjrYsQFTFjkfTmUcKvDeHXyWKPYMpMPINUGpYqVGV4dF8x'),
+    risky = false,
+    callback = function(v)
+        print(v)
+    end
+})
+
+Section1:AddText({
+    enabled = true,
+    text = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('DliWHJuIcfBUzDiwmnEtGLsikjFIrdiyjUXruEvMySTObHiIgGTIHynVGV4dDE='),
+    flag = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('gShoPxKWXWjztdfKzrzrfLWsWlDiqoRVYRhYnwCXOiCIHwgdmMwNwNtVGV4dF8x'),
+    risky = false,
+})
+
+Section1:AddColor({
+    enabled = true,
+    text = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('iovSnqPnJdlZuZoVQzdUHxZhansVtgctWOWfnsbHwRtyaJreJTeNzpEQ29sb3JQaWNrZXIx'),
+    flag = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('kmrjJqRyYAZcEytoREjhCAhIznuARAhUNLrEJOHWMLgQlCUeWjiAvsxQ29sb3JfMQ=='),
+    tooltip = kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('VcXFkxtBphcGgFrZgopfPDXpnmLiOoCbkuXcSIJEPyNVayiqxFCfmLfVG9vbFRpcDE='),
+    color = Color3.new(1, 1, 1),
+    trans = 0,
+    open = false,
+    callback = function(color)
+        print(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('oZhppLJDmQbeUwvTgJTYoALDAygOmufMiiIkDpixIxipTRHwjDTYTyHQ29sb3Igc2VsZWN0ZWQ6'), color)
+    end
+})
+
+Library:SendNotification(kcbrEgHpRHShRHAKGgILcswFyGhXBcloqaMvTsHFAdsmzHuFq('SlNsnGXZvqqmoTqUcgTCyJHPIpZfPDHvneswalyOKQxrjOyzfVsszmhTm90aWZpY2F0aW9u'), 5, Color3.new(1, 0, 0))    
